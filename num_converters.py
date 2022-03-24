@@ -12,3 +12,23 @@ def num_to_roman(num:int) -> str:
 
     if len(str(num)) == 1:
         return roman_nbs[0][num-1]
+    elif len(str(num)) ==  2:
+        result = ""
+        turn = 1
+        for n in str(num):
+            if n == '0':
+                next
+            else:
+                result += roman_nbs[len(str(num))-turn][int(n)-1]
+            turn += 1
+        return result
+    elif len(str(num)) ==  3:
+        result = ""
+        turn = 1
+        for n in str(num):
+            if n == '0':
+                next
+            else:
+                result += roman_nbs[len(str(num))-turn][int(n)-1]
+            turn += 1
+        return result
