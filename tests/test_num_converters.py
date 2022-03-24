@@ -4,7 +4,7 @@ import unittest
 from num_converters import num_to_roman
 
 
-class TestConverters(unittest.TestCase):
+class TestConvertersNumToRoman(unittest.TestCase):
 
     def test_num_to_roman_5(self):
         self.assertEqual(num_to_roman(5), 'V')
@@ -53,3 +53,4 @@ class TestConverters(unittest.TestCase):
 
     def test_num_to_roman_999(self):
         self.assertEqual(num_to_roman(999), 'CMXCIX')
+

@@ -17,3 +17,10 @@ def num_to_roman(num:int) -> str:
         else:
             result += roman_nbs[len(str(num))-turn][int(n)-1]
     return result
+
+def roman_to_num(rom:str) -> int:
+    """
+    converts roman numbers (str) into classical numbers (int)
+    example: 'V' -> 5
+    """
+    pass
