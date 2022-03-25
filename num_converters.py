@@ -1,5 +1,5 @@
 
-def num_to_roman(num:int) -> str:
+def num_to_roman(num: int) -> str:
     """
     converts classical numbers (int) into roman numbers (str)
     example: 5 -> 'V'
@@ -18,14 +18,15 @@ def num_to_roman(num:int) -> str:
             result += roman_nbs[len(str(num))-turn][int(n)-1]
     return result
 
-def roman_to_num(rom:str) -> int:
+
+def roman_to_num(rom: str) -> int:
     """
     converts roman numbers (str) into classical numbers (int)
     example: 'V' -> 5
     """
     classical_nbs = {
-        'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,
-        'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900
+        'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000,
+        'IV': 4, 'IX': 9, 'XL': 40, 'XC': 90, 'CD': 400, 'CM': 900
     }
 
     result = 0
@@ -39,6 +40,6 @@ def roman_to_num(rom:str) -> int:
                 result += classical_nbs[rom[turn]]
                 turn += 1
         except IndexError:
-                result += classical_nbs[rom[turn]]
-                turn += 1
+            result += classical_nbs[rom[turn]]
+            turn += 1
     return result
