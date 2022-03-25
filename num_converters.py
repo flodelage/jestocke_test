@@ -23,4 +23,18 @@ def roman_to_num(rom:str) -> int:
     converts roman numbers (str) into classical numbers (int)
     example: 'V' -> 5
     """
-    pass
+    classical_nbs = {
+        'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,
+        'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900
+    }
+
+    result = 0
+    turn = 0
+    while turn < len(rom):
+        if rom[turn] + rom[turn+1] in classical_nbs:
+            result += classical_nbs[rom[turn] + rom[turn+1]]
+            turn += 2
+        else:
+            result += classical_nbs[rom[turn]]
+            turn += 1
+    return result
