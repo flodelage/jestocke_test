@@ -31,10 +31,14 @@ def roman_to_num(rom:str) -> int:
     result = 0
     turn = 0
     while turn < len(rom):
-        if rom[turn] + rom[turn+1] in classical_nbs:
-            result += classical_nbs[rom[turn] + rom[turn+1]]
-            turn += 2
-        else:
-            result += classical_nbs[rom[turn]]
-            turn += 1
+        try:
+            if rom[turn] + rom[turn+1] in classical_nbs:
+                result += classical_nbs[rom[turn] + rom[turn+1]]
+                turn += 2
+            else:
+                result += classical_nbs[rom[turn]]
+                turn += 1
+        except IndexError:
+                result += classical_nbs[rom[turn]]
+                turn += 1
     return result

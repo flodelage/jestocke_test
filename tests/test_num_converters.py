@@ -57,20 +57,20 @@ class TestConvertersNumToRoman(unittest.TestCase):
 
 class TestConvertersRomanToNum(unittest.TestCase):
 
-    # def test_roman_to_num_5(self):
-    #     self.assertEqual(roman_to_num('V'), 5)
+    def test_roman_to_num_5(self):
+        self.assertEqual(roman_to_num('V'), 5)
 
-    # def test_roman_to_num_15(self):
-    #     self.assertEqual(roman_to_num('XV'), 15)
+    def test_roman_to_num_15(self):
+        self.assertEqual(roman_to_num('XV'), 15)
 
-    # def test_roman_to_num_20(self):
-    #     self.assertEqual(roman_to_num('XX'), 20)
+    def test_roman_to_num_20(self):
+        self.assertEqual(roman_to_num('XX'), 20)
 
-    # def test_roman_to_num_500(self):
-    #     self.assertEqual(roman_to_num('D'), 500)
+    def test_roman_to_num_500(self):
+        self.assertEqual(roman_to_num('D'), 500)
 
-    # def test_roman_to_num_807(self):
-    #     self.assertEqual(roman_to_num('DCCCVII'), 807)
+    def test_roman_to_num_807(self):
+        self.assertEqual(roman_to_num('DCCCVII'), 807)
 
     def test_roman_to_num_999(self):
         self.assertEqual(roman_to_num('CMXCIX'), 999)
