@@ -1,7 +1,7 @@
 
 import unittest
 
-from num_converters import RomanNumeralConverter
+from converters.num_converters import RomanNumeralConverter
 
 
 class TestConvertersNumToRoman(unittest.TestCase):

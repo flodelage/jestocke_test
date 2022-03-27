@@ -2,7 +2,7 @@
 # Roman numerals converters
 
 ## Content
-This program contains 2 own functions which can:
+This program contains 2 own functions which can convert:
 - a Roman numeral into a classical number ('V' -> 5)
 - a classical number into a Roman numeral (5 -> 'V')
 
